@@ -1,0 +1,102 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:#0d0d0d;
+    color:white;
+    font-family:Arial,sans-serif;
+    overflow-x:hidden;
+}
+
+#particles{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+.particle{
+    position:absolute;
+    border-radius:50%;
+    background:red;
+    opacity:.4;
+    animation:float linear infinite;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+    }
+    to{
+        transform:translateY(-120px);
+    }
+}
+
+#menuBtn{
+    position:fixed;
+    top:15px;
+    left:15px;
+    z-index:1000;
+    border:none;
+    padding:10px 15px;
+    font-size:22px;
+    cursor:pointer;
+    border-radius:10px;
+}
+
+.sidebar{
+    position:fixed;
+    top:0;
+    left:-260px;
+    width:250px;
+    height:100%;
+    background:#181818;
+    transition:.3s;
+    padding:20px;
+}
+
+.sidebar.open{
+    left:0;
+}
+
+.sidebar h2{
+    color:red;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    margin-top:10px;
+    background:#222;
+    border-radius:8px;
+}
+
+.content{
+    padding:80px 30px;
+}
+
+.card{
+    background:#181818;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+input,
+select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+button{
+    padding:10px 15px;
+    cursor:pointer;
+}
