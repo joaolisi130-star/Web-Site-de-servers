@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel Minecraft</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="particles"></div>
+
+<button id="menuBtn">☰</button>
+
+<div class="sidebar" id="sidebar">
+    <h2>Painel</h2>
+
+    <a href="#">Servidor</a>
+    <a href="#">Console</a>
+    <a href="#">Opções</a>
+    <a href="#">Software</a>
+    <a href="#">Arquivos</a>
+    <a href="#">Mundos</a>
+</div>
+
+<div class="content">
+
+    <h1>Meu Servidor Minecraft</h1>
+
+    <div class="card">
+        <h3>Status</h3>
+        <p>Offline</p>
+
+        <button>Iniciar</button>
+        <button>Parar</button>
+    </div>
+
+    <div class="card">
+        <h3>Configurações</h3>
+
+        <label>Máximo de Jogadores</label>
+        <input type="number" value="20">
+
+        <label>Gamemode</label>
+        <select>
+            <option>survival</option>
+            <option>creative</option>
+            <option>adventure</option>
+            <option>spectator</option>
+        </select>
+
+        <label>Pirata</label>
+        <input type="checkbox">
+
+        <label>Voar</label>
+        <input type="checkbox" checked>
+
+        <button>Salvar</button>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
